@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="appleTitanium" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8977e" />
+      <stop offset="50%" stop-color="#3d352e" />
+      <stop offset="100%" stop-color="#1c1815" />
+    </linearGradient>
+    <radialGradient id="appleLens" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </radialGradient>
+  </defs>
+
+  <!-- Body -->
+  <rect x="75" y="30" width="250" height="540" rx="46" fill="url(#appleTitanium)" stroke="#d4af37" stroke-width="2" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.8))"/>
+
+  <!-- Camera Control Button on Right Frame -->
+  <rect x="323" y="380" width="6" height="55" rx="3" fill="#ffaa40" stroke="#fff" stroke-width="1"/>
+  <text x="345" y="415" fill="#ffaa40" font-family="Arial, sans-serif" font-size="10" font-weight="bold" transform="rotate(90 345 415)">CAM CONTROL</text>
+
+  <!-- Triple Camera Island Plate -->
+  <rect x="88" y="45" width="135" height="145" rx="32" fill="#2d2822" stroke="#6b5b4d" stroke-width="1.5" opacity="0.95"/>
+
+  <!-- Top Lens -->
+  <circle cx="155" cy="85" r="28" fill="#181512" stroke="#b8977e" stroke-width="3"/>
+  <circle cx="155" cy="85" r="20" fill="url(#appleLens)"/>
+  <circle cx="150" cy="80" r="4" fill="#fff" opacity="0.8"/>
+
+  <!-- Bottom Left Lens -->
+  <circle cx="125" cy="140" r="28" fill="#181512" stroke="#b8977e" stroke-width="3"/>
+  <circle cx="125" cy="140" r="20" fill="url(#appleLens)"/>
+  <circle cx="120" cy="135" r="4" fill="#fff" opacity="0.8"/>
+
+  <!-- Bottom Right Lens -->
+  <circle cx="185" cy="140" r="28" fill="#181512" stroke="#b8977e" stroke-width="3"/>
+  <circle cx="185" cy="140" r="20" fill="url(#appleLens)"/>
+  <circle cx="180" cy="135" r="4" fill="#fff" opacity="0.8"/>
+
+  <!-- Flash & LiDAR -->
+  <circle cx="190" cy="80" r="10" fill="#fff" stroke="#ffb703" stroke-width="2"/>
+  <circle cx="155" cy="175" r="7" fill="#000" stroke="#444" stroke-width="1.5"/>
+
+  <!-- Apple Logo center -->
+  <circle cx="200" cy="300" r="20" fill="none" stroke="#e0cfc2" stroke-width="3" opacity="0.7"/>
+
+  <!-- Badge -->
+  <rect x="110" y="440" width="180" height="34" rx="17" fill="rgba(255, 170, 64, 0.15)" stroke="#ffaa40" stroke-width="1.5"/>
+  <text x="200" y="462" fill="#ffaa40" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">⚡ A18 PRO & TITANIO</text>
+
+  <!-- Brand logo -->
+  <text x="200" y="530" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="13" text-anchor="middle" letter-spacing="3" opacity="0.8">IPHONE 16 PRO MAX</text>
+</svg>

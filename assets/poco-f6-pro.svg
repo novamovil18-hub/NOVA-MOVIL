@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pocoBlack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="50%" stop-color="#0f0f11" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <linearGradient id="pocoYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+  </defs>
+
+  <!-- Body -->
+  <rect x="75" y="30" width="250" height="540" rx="36" fill="url(#pocoBlack)" stroke="#facc15" stroke-width="2" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.8))"/>
+
+  <!-- Glass Deco Camera Island across top -->
+  <rect x="85" y="45" width="230" height="150" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="1.5"/>
+
+  <!-- POCO Yellow Brand on island -->
+  <rect x="235" y="60" width="65" height="24" rx="4" fill="#000" stroke="#facc15" stroke-width="1"/>
+  <text x="267" y="77" fill="#facc15" font-family="Arial, sans-serif" font-weight="900" font-size="14" text-anchor="middle" letter-spacing="2">POCO</text>
+
+  <!-- 3 Big Lenses Matrix on Deco Glass -->
+  <circle cx="130" cy="90" r="26" fill="#111" stroke="#facc15" stroke-width="3"/>
+  <circle cx="130" cy="90" r="16" fill="#0284c7"/>
+  <circle cx="127" cy="87" r="3" fill="#fff" opacity="0.8"/>
+
+  <circle cx="190" cy="90" r="26" fill="#111" stroke="#facc15" stroke-width="3"/>
+  <circle cx="190" cy="90" r="16" fill="#0284c7"/>
+  <circle cx="187" cy="87" r="3" fill="#fff" opacity="0.8"/>
+
+  <circle cx="130" cy="150" r="26" fill="#111" stroke="#facc15" stroke-width="3"/>
+  <circle cx="130" cy="150" r="16" fill="#0284c7"/>
+  <circle cx="127" cy="147" r="3" fill="#fff" opacity="0.8"/>
+
+  <!-- Ring Flash with text -->
+  <circle cx="190" cy="150" r="24" fill="#000" stroke="#fff" stroke-width="3"/>
+  <circle cx="190" cy="150" r="15" fill="#fef08a"/>
+  <text x="190" y="153" fill="#000" font-family="Arial, sans-serif" font-weight="bold" font-size="8" text-anchor="middle">50MP OIS</text>
+
+  <!-- IceLoop Liquid Cooling Texture -->
+  <path d="M 120 300 Q 200 320 280 300" stroke="#00f2fe" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M 120 315 Q 200 335 280 315" stroke="#00f2fe" stroke-width="3" fill="none" opacity="0.5"/>
+
+  <!-- 120W HyperCharge Badge -->
+  <rect x="95" y="380" width="210" height="34" rx="17" fill="rgba(250, 204, 21, 0.15)" stroke="#facc15" stroke-width="1.5"/>
+  <text x="200" y="402" fill="#fde047" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">⚡ 120W HYPERCHARGE (19 MIN)</text>
+
+  <!-- 4000 Nits Screen Badge -->
+  <rect x="110" y="430" width="180" height="28" rx="14" fill="rgba(0, 242, 254, 0.12)" stroke="#00f2fe" stroke-width="1"/>
+  <text x="200" y="448" fill="#00f2fe" font-family="Arial, sans-serif" font-weight="bold" font-size="10" text-anchor="middle">🌟 PANTALLA 2K 4000 NITS</text>
+
+  <!-- Snapdragon Chip Callout -->
+  <text x="200" y="525" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="13" text-anchor="middle" letter-spacing="2" opacity="0.8">SNAPDRAGON 8 GEN 2</text>
+</svg>

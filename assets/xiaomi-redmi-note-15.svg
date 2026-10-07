@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="redmiNoteBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="50%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+  </defs>
+  <rect x="75" y="30" width="250" height="540" rx="36" fill="url(#redmiNoteBg)" stroke="#10b981" stroke-width="2.5" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.8))"/>
+
+  <!-- Big Triple Camera Island -->
+  <rect x="95" y="70" width="130" height="160" rx="26" fill="#064e3b" stroke="#34d399" stroke-width="2"/>
+  
+  <circle cx="160" cy="115" r="28" fill="#000" stroke="#34d399" stroke-width="3"/>
+  <circle cx="160" cy="115" r="16" fill="#059669"/>
+  <circle cx="156" cy="111" r="4" fill="#fff" opacity="0.9"/>
+  <text x="160" y="155" fill="#34d399" font-family="Arial, sans-serif" font-size="9" font-weight="900" text-anchor="middle">108MP 3X</text>
+
+  <circle cx="130" cy="190" r="18" fill="#000" stroke="#34d399" stroke-width="2"/>
+  <circle cx="130" cy="190" r="10" fill="#059669"/>
+
+  <circle cx="185" cy="190" r="18" fill="#000" stroke="#34d399" stroke-width="2"/>
+  <circle cx="185" cy="190" r="10" fill="#059669"/>
+
+  <!-- 108MP & AMOLED 120Hz Badge -->
+  <rect x="90" y="320" width="220" height="34" rx="17" fill="rgba(52, 211, 153, 0.2)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="200" y="342" fill="#a7f3d0" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">📸 108 MP & AMOLED 120Hz 1800 NITS</text>
+
+  <!-- Specs pill -->
+  <rect x="110" y="370" width="180" height="28" rx="14" fill="rgba(0, 242, 254, 0.15)" stroke="#00f2fe" stroke-width="1"/>
+  <text x="200" y="388" fill="#00f2fe" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">⚡ SNAPDRAGON & 6/128GB</text>
+
+  <!-- Price -->
+  <text x="200" y="465" fill="#00f59b" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="25" text-anchor="middle">Bs. 2.130</text>
+  <text x="200" y="485" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">US$ 171,08</text>
+
+  <text x="200" y="540" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="13" text-anchor="middle" letter-spacing="2" opacity="0.9">REDMI NOTE 15</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="honorBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f" />
+      <stop offset="50%" stop-color="#0a192f" />
+      <stop offset="100%" stop-color="#050c1a" />
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700" />
+      <stop offset="50%" stop-color="#ffae00" />
+      <stop offset="100%" stop-color="#d4af37" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#9d4edd" />
+    </linearGradient>
+    <radialGradient id="lensGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ffff" />
+      <stop offset="60%" stop-color="#002b4d" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Phone Body (Ultra Slim & Curved Edge) -->
+  <rect x="75" y="30" width="250" height="540" rx="36" fill="url(#honorBody)" stroke="url(#goldRing)" stroke-width="3" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.8))"/>
+  
+  <!-- Curved Edge Highlights -->
+  <path d="M 80 40 Q 75 300 80 560" stroke="#00f2fe" stroke-width="2" opacity="0.6" fill="none"/>
+  <path d="M 320 40 Q 325 300 320 560" stroke="#00f2fe" stroke-width="2" opacity="0.6" fill="none"/>
+
+  <!-- Matrix Circular Camera Ring (Honor Signature) -->
+  <circle cx="200" cy="190" r="85" fill="none" stroke="url(#goldRing)" stroke-width="12" filter="url(#glowGold)"/>
+  <circle cx="200" cy="190" r="75" fill="#080c16" stroke="#1f293d" stroke-width="3"/>
+  <circle cx="200" cy="190" r="40" fill="#0f172a" />
+  
+  <!-- Center Text in Ring -->
+  <text x="200" y="195" fill="#ffd700" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle" letter-spacing="1">108MP MATRIX</text>
+
+  <!-- 4 Ring Lenses -->
+  <circle cx="200" cy="135" r="16" fill="url(#lensGrad)" stroke="#ffd700" stroke-width="2"/>
+  <circle cx="200" cy="135" r="7" fill="#000"/>
+  <circle cx="197" cy="132" r="3" fill="#fff" opacity="0.8"/>
+
+  <circle cx="255" cy="190" r="16" fill="url(#lensGrad)" stroke="#ffd700" stroke-width="2"/>
+  <circle cx="255" cy="190" r="7" fill="#000"/>
+  <circle cx="252" cy="187" r="3" fill="#fff" opacity="0.8"/>
+
+  <circle cx="200" cy="245" r="16" fill="url(#lensGrad)" stroke="#ffd700" stroke-width="2"/>
+  <circle cx="200" cy="245" r="7" fill="#000"/>
+  <circle cx="197" cy="242" r="3" fill="#fff" opacity="0.8"/>
+
+  <circle cx="145" cy="190" r="16" fill="url(#lensGrad)" stroke="#ffd700" stroke-width="2"/>
+  <circle cx="145" cy="190" r="7" fill="#000"/>
+  <circle cx="142" cy="187" r="3" fill="#fff" opacity="0.8"/>
+
+  <!-- Guinness World Record Badge on phone -->
+  <rect x="120" y="360" width="160" height="34" rx="17" fill="rgba(255, 183, 3, 0.15)" stroke="#ffd700" stroke-width="1.5"/>
+  <text x="200" y="382" fill="#ffd700" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">🏆 RÉCORD GUINNESS</text>
+
+  <!-- Resilience Shield Graphic -->
+  <path d="M 200 415 L 235 435 L 235 480 Q 200 520 200 520 Q 200 520 165 480 L 165 435 Z" fill="rgba(0, 242, 254, 0.15)" stroke="#00f2fe" stroke-width="2"/>
+  <text x="200" y="475" fill="#00f2fe" font-family="Arial, sans-serif" font-weight="900" font-size="14" text-anchor="middle">5★ SGS</text>
+
+  <!-- Brand logo -->
+  <text x="200" y="545" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="15" text-anchor="middle" letter-spacing="4" opacity="0.9">HONOR</text>
+</svg>

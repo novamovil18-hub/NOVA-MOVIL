@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tecnoSparkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d" />
+      <stop offset="50%" stop-color="#052e16" />
+      <stop offset="100%" stop-color="#020d06" />
+    </linearGradient>
+  </defs>
+  <rect x="75" y="30" width="250" height="540" rx="36" fill="url(#tecnoSparkBg)" stroke="#22c55e" stroke-width="2" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.8))"/>
+
+  <!-- Large Camera Island -->
+  <rect x="95" y="70" width="115" height="150" rx="26" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+  <circle cx="150" cy="115" r="24" fill="#000" stroke="#4ade80" stroke-width="3"/>
+  <circle cx="150" cy="115" r="14" fill="#15803d"/>
+  <circle cx="147" cy="112" r="3" fill="#fff" opacity="0.8"/>
+
+  <circle cx="150" cy="175" r="24" fill="#000" stroke="#4ade80" stroke-width="3"/>
+  <circle cx="150" cy="175" r="14" fill="#15803d"/>
+
+  <!-- Speaker DTS 300% Badge -->
+  <rect x="95" y="320" width="210" height="34" rx="17" fill="rgba(34, 197, 94, 0.2)" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="200" y="342" fill="#86efac" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">🔊 PARLANTES DTS 300% VOLUMEN</text>
+
+  <!-- Specs pill -->
+  <rect x="110" y="370" width="180" height="28" rx="14" fill="rgba(0, 242, 254, 0.15)" stroke="#00f2fe" stroke-width="1"/>
+  <text x="200" y="388" fill="#00f2fe" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">⚡ 120Hz FLUIDO & 4/128GB</text>
+
+  <!-- Price -->
+  <text x="200" y="465" fill="#00f59b" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="25" text-anchor="middle">Bs. 1.270</text>
+  <text x="200" y="485" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">US$ 102,01</text>
+
+  <text x="200" y="540" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" letter-spacing="3" opacity="0.9">TECNO SPARK GO 3</text>
+</svg>

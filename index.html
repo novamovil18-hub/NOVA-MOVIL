@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVAMÓVIL - Tienda Exclusiva de Celulares de Alta Gama</title>
+  <meta name="description" content="Compra los mejores smartphones con características únicas: Récord Guinness, pantallas curvas, cámaras pro, resistencia IP y contacto directo por WhatsApp al 77254863.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+</head>
+<body>
+
+  <!-- ================= HEADER & NAV ================= -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">📱</div>
+        <div class="logo-text">NOVA<span>MÓVIL</span></div>
+      </a>
+
+      <!-- Acceso Directo de Contacto 77254863 -->
+      <a href="https://wa.me/59177254863?text=Hola%20NOVAMÓVIL!%20Deseo%20hacer%20una%20consulta%20sobre%20sus%20celulares" target="_blank" rel="noopener noreferrer" class="header-phone-badge" title="Chatear al WhatsApp Oficial 77254863">
+        <span class="pulse-dot"></span>
+        <span class="text-label">WhatsApp:</span>
+        <span>77254863</span>
+      </a>
+
+      <div class="header-actions">
+        <button id="open-compare-btn" class="btn-nav-compare" title="Comparar dos celulares">
+          <span>⚖️</span>
+          <span>Comparar</span>
+        </button>
+
+        <button id="cart-toggle-btn" class="btn-cart-toggle" title="Ver mi carrito">
+          <span>🛒</span>
+          <span id="cart-badge-counter" class="cart-counter">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-pill">
+          <span>⚡</span>
+          <span>TECNOLOGÍA REVOLUCIONARIA 2026</span>
+        </div>
+
+        <h1 class="hero-title">
+          Smartphones con <br>
+          <span class="gradient-text">Características Únicas</span>
+        </h1>
+
+        <p class="hero-description">
+          Los 10 mejores modelos equilibrados en precio y memoria de <strong>Honor, Infinix, Samsung, Tecno y Xiaomi</strong>: pantallas curvas 3D, baterías colosales de 6000 mAh, cámaras de 108 MP y hasta 256 GB de memoria. Consulta y compra directo vía WhatsApp al <strong>77254863</strong>.
+        </p>
+
+        <div class="hero-phone-cta">
+          <a href="#catalogo" class="btn-primary-hero">
+            <span>🔥 Ver Modelos y Fichas</span>
+            <span>↓</span>
+          </a>
+          <a href="https://wa.me/59177254863?text=Hola%20NOVAMÓVIL!%20Me%20gustaría%20recibir%20asesoría%20sobre%20los%20celulares%20disponibles" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-hero">
+            <span>💬 Chatear al 77254863</span>
+          </a>
+        </div>
+
+        <div class="hero-features-chips">
+          <div class="chip-item">
+            <span class="chip-icon">🛡️</span>
+            <span>Garantía Oficial 1 Año</span>
+          </div>
+          <div class="chip-item">
+            <span class="chip-icon">🚀</span>
+            <span>Envíos Inmediatos</span>
+          </div>
+          <div class="chip-item">
+            <span class="chip-icon">🏆</span>
+            <span>Certificaciones Reales</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spotlight Banner: Infinix Hot 60 Pro+ Preview -->
+      <div class="hero-spotlight">
+        <div class="hero-spotlight-card">
+          <div class="spotlight-top-badge">🌊 Pantalla Curva 3D</div>
+          <div class="spotlight-image-box">
+            <img id="spotlight-img" src="assets/images/infinix-hot-60-pro-plus.jpg" alt="Infinix Hot 60 Pro+">
+          </div>
+          <div class="spotlight-info">
+            <h3>Infinix Hot 60 Pro+</h3>
+            <p class="spotlight-tagline">Pantalla 3D Curva AMOLED 120Hz & 16 GB RAM Total</p>
+            
+            <div class="spotlight-specs-pills">
+              <div class="spec-pill-mini"><span>🌊</span> Curva 3D 120Hz</div>
+              <div class="spec-pill-mini"><span>🧠</span> 8GB+8GB RAM (16GB)</div>
+              <div class="spec-pill-mini"><span>💾</span> 256 GB Memoria</div>
+              <div class="spec-pill-mini"><span>📸</span> 50 MP con OIS</div>
+            </div>
+
+            <div class="spotlight-price-row">
+              <div>
+                <span class="spotlight-price">Bs. 2.530</span>
+                <span style="font-size: 0.85rem; color: #94a3b8; margin-left: 0.3rem;">(US$ 203,21)</span>
+              </div>
+              <button class="btn-spotlight-action" onclick="openSpecsModal('infinix-hot-60-pro-plus')">
+                Ver Ficha Completa
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FILTROS Y BÚSQUEDA DINÁMICA ================= -->
+  <section id="catalogo" class="catalog-controls-section">
+    <div class="controls-card">
+      <div class="search-and-sort-row">
+        <!-- Buscador -->
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" class="search-input" placeholder="Buscar por modelo, procesador, cámara, memoria...">
+        </div>
+
+        <!-- Ordenamiento -->
+        <div class="sort-box">
+          <span>Ordenar:</span>
+          <select id="sort-select" class="sort-select">
+            <option value="featured">✨ Destacados</option>
+            <option value="price-asc">💵 Menor precio (Bs. 1.270+)</option>
+            <option value="price-desc">💎 Mayor precio (Bs. 2.550)</option>
+            <option value="discount">🔥 Mayores descuentos</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Filtro por Marca -->
+      <div class="brand-filters-row">
+        <button class="filter-pill active" data-brand="all">Todos los Celulares (10)</button>
+        <button class="filter-pill" data-brand="Honor">Honor (2)</button>
+        <button class="filter-pill" data-brand="Infinix">Infinix (2)</button>
+        <button class="filter-pill" data-brand="Samsung">Samsung (2)</button>
+        <button class="filter-pill" data-brand="Tecno">Tecno (2)</button>
+        <button class="filter-pill" data-brand="Xiaomi">Xiaomi (2)</button>
+      </div>
+
+      <!-- Filtros Rápidos por Características Especiales -->
+      <div class="feature-quick-filters">
+        <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">Atributos únicos:</span>
+        <button class="feature-tag-filter" data-feature="curvo">🌊 Pantalla Curva 3D</button>
+        <button class="feature-tag-filter" data-feature="bateria-6000">🔋 Baterías 6000 mAh</button>
+        <button class="feature-tag-filter" data-feature="camara-108">📸 Cámaras 108 MP</button>
+        <button class="feature-tag-filter" data-feature="memoria-256">💾 256 GB Almacenamiento</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GRID DE CELULARES ================= -->
+  <main class="catalog-section">
+    <div class="section-header-row">
+      <h2 class="section-title">
+        <span>⚡</span> Catálogo de Teléfonos Disponibles
+      </h2>
+      <span id="catalog-count" class="section-counter">Cargando celulares...</span>
+    </div>
+
+    <div id="phones-grid" class="phones-grid">
+      <!-- Se inyecta dinámicamente con JavaScript desde data/phones.json -->
+    </div>
+  </main>
+
+  <!-- ================= MODAL INTERACTIVO DE FICHA TÉCNICA (CORE FEATURE) ================= -->
+  <div id="specs-modal-backdrop" class="modal-backdrop">
+    <div class="modal-container">
+      <button id="modal-close-btn" class="modal-close-btn" title="Cerrar ventana">&times;</button>
+
+      <div class="modal-body-layout">
+        <!-- Columna Izquierda: Imagen, Colores, Precio -->
+        <div class="modal-left">
+          <div class="modal-image-showcase">
+            <img id="modal-phone-img" src="" alt="">
+          </div>
+          <button type="button" class="btn-change-image-modal" onclick="openChangeImageModal(state.currentModalPhone.id)">
+            <span>📷 Cambiar / Subir Foto de este Modelo</span>
+          </button>
+
+          <div class="modal-colors-selector">
+            <div class="modal-colors-label">🎨 Colores disponibles en stock:</div>
+            <div id="modal-colors-list" class="colors-list-interactive">
+              <!-- Botones de colores generados dinámicamente -->
+            </div>
+          </div>
+
+          <div class="modal-price-box">
+            <div id="modal-price-val" class="modal-price-val">Bs. 0</div>
+            <div id="modal-original-price" class="modal-original-price"></div>
+            <div style="font-size: 0.78rem; color: var(--accent-cyan); margin-top: 0.4rem;">
+              ✓ Incluye cargador original, protector y envío
+            </div>
+          </div>
+
+          <p id="modal-phone-desc" style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 1rem;"></p>
+        </div>
+
+        <!-- Columna Derecha: Características Únicas y Ficha Técnica -->
+        <div class="modal-right">
+          <div id="modal-brand-name" class="modal-brand-badge">MARCA</div>
+          <h2 id="modal-phone-title" class="modal-title">Nombre del Smartphone</h2>
+          <div id="modal-phone-tagline" class="modal-tagline">Lema del teléfono</div>
+
+          <!-- BANNER RESALTADO DE CARACTERÍSTICA ÚNICA -->
+          <div class="unique-feature-banner">
+            <div class="feature-banner-title">
+              <span>🌟</span>
+              <span>CARACTERÍSTICA ÚNICA Y EXCLUSIVA</span>
+            </div>
+            <p id="modal-unique-feature" class="feature-banner-content">
+              Detalle único del modelo (Récord Guinness, curva, etc.).
+            </p>
+          </div>
+
+          <!-- GRID DE ESPECIFICACIONES TÉCNICAS -->
+          <div class="specs-detail-grid">
+            <!-- Cámara -->
+            <div class="spec-detail-card">
+              <div class="spec-detail-header">
+                <span class="spec-icon">📸</span>
+                <span>Cámara Fotográfica</span>
+              </div>
+              <div id="spec-camara" class="spec-detail-value">---</div>
+            </div>
+
+            <!-- Procesador -->
+            <div class="spec-detail-card">
+              <div class="spec-detail-header">
+                <span class="spec-icon">⚡</span>
+                <span>Procesador (CPU)</span>
+              </div>
+              <div id="spec-procesador" class="spec-detail-value">---</div>
+            </div>
+
+            <!-- RAM -->
+            <div class="spec-detail-card">
+              <div class="spec-detail-header">
+                <span class="spec-icon">🧠</span>
+                <span>Memoria RAM</span>
+              </div>
+              <div id="spec-ram" class="spec-detail-value">---</div>
+            </div>
+
+            <!-- Memoria Interna -->
+            <div class="spec-detail-card">
+              <div class="spec-detail-header">
+                <span class="spec-icon">💾</span>
+                <span>Almacenamiento</span>
+              </div>
+              <div id="spec-memoria" class="spec-detail-value">---</div>
+            </div>
+
+            <!-- Batería -->
+            <div class="spec-detail-card">
+              <div class="spec-detail-header">
+                <span class="spec-icon">🔋</span>
+                <span>Batería y Carga</span>
+              </div>
+              <div id="spec-bateria" class="spec-detail-value">---</div>
+            </div>
+
+            <!-- Certificación IP -->
+            <div class="spec-detail-card ip-card">
+              <div class="spec-detail-header">
+                <span class="spec-icon">🛡️</span>
+                <span>Certificación IP (Agua/Polvo)</span>
+              </div>
+              <div id="spec-ip" class="spec-detail-value">---</div>
+            </div>
+
+            <!-- Pantalla -->
+            <div class="spec-detail-card" style="grid-column: 1 / -1;">
+              <div class="spec-detail-header">
+                <span class="spec-icon">📱</span>
+                <span>Pantalla y Curvatura</span>
+              </div>
+              <div id="spec-pantalla" class="spec-detail-value">---</div>
+            </div>
+          </div>
+
+          <!-- Botones de Acción del Modal -->
+          <div class="modal-actions-container">
+            <a id="modal-btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="btn-modal-whatsapp">
+              <span>💬 Comprar por WhatsApp al 77254863</span>
+            </a>
+            <button class="btn-modal-cart" onclick="addCurrentModalToCart()">
+              <span>🛒 Agregar al Carrito</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CARRITO DRAWER SLIDER ================= -->
+  <div id="cart-drawer-backdrop" class="cart-drawer-backdrop">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3>🛒 Mi Carrito de Compras</h3>
+        <button id="close-cart-btn" class="btn-close-cart">&times;</button>
+      </div>
+
+      <div id="cart-items-container" class="cart-items-list">
+        <!-- Ítems agregados -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span class="subtotal-label">Subtotal estimado:</span>
+          <span id="cart-total-val" class="subtotal-val">Bs. 0</span>
+        </div>
+        <a id="btn-cart-checkout-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="btn-checkout-whatsapp">
+          <span>📲 Pedir Pedido Completo por WhatsApp (77254863)</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= COMPARADOR MODAL ================= -->
+  <div id="compare-modal" class="comparator-modal">
+    <div class="comparator-content">
+      <button id="close-compare-btn" class="modal-close-btn">&times;</button>
+      <h2 style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff;">
+        ⚖️ Comparador Frente a Frente
+      </h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+        Elige dos smartphones para comparar sus cámaras, procesadores, certificaciones IP y características únicas.
+      </p>
+
+      <div class="compare-selectors-row">
+        <div>
+          <label style="display: block; font-size: 0.85rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 0.4rem;">Primer Smartphone:</label>
+          <select id="compare-select-1" class="compare-select"></select>
+        </div>
+        <div>
+          <label style="display: block; font-size: 0.85rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 0.4rem;">Segundo Smartphone:</label>
+          <select id="compare-select-2" class="compare-select"></select>
+        </div>
+      </div>
+
+      <div style="overflow-x: auto;">
+        <table class="compare-table">
+          <tbody id="compare-table-body">
+            <!-- Datos de comparación inyectados dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL PARA CAMBIAR FOTO ================= -->
+  <div id="change-image-modal" class="modal-backdrop">
+    <div class="modal-container" style="max-width: 500px; padding: 2rem;">
+      <button id="close-change-image-btn" class="modal-close-btn" onclick="closeChangeImageModal()">&times;</button>
+      
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span style="font-size: 2.2rem; display: block; margin-bottom: 0.3rem;">📷</span>
+        <h3 id="change-image-title" style="font-family: var(--font-display); color: #fff; font-size: 1.35rem; margin-bottom: 0.3rem;">Cambiar Foto del Celular</h3>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">Sube una foto desde tu computadora o pega un enlace de internet.</p>
+      </div>
+
+      <!-- Preview de la foto -->
+      <div class="custom-image-preview-box">
+        <img id="custom-image-preview" src="" alt="Vista previa de foto">
+      </div>
+
+      <!-- Opción 1: Archivo local -->
+      <div style="margin-bottom: 1.2rem;">
+        <label class="custom-upload-label" for="custom-file-input">
+          <span>📁 Subir foto de mi computadora</span>
+          <span style="font-size: 0.75rem; opacity: 0.8; font-weight: normal;">(JPG, PNG, WEBP)</span>
+        </label>
+        <input type="file" id="custom-file-input" accept="image/*" style="display: none;" onchange="handleLocalImageUpload(event)">
+      </div>
+
+      <!-- Opción 2: URL de internet -->
+      <div style="margin-bottom: 1.5rem;">
+        <label style="display: block; font-size: 0.82rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 0.4rem;">O pega la URL de una foto de internet:</label>
+        <input type="url" id="custom-url-input" class="search-input" style="padding: 0.65rem 1rem;" placeholder="https://ejemplo.com/mifoto.jpg" oninput="handleUrlImageInput(event)">
+      </div>
+
+      <!-- Botones de Acción -->
+      <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+        <button type="button" class="btn-primary-hero" style="width: 100%; justify-content: center; padding: 0.8rem;" onclick="saveCustomImage()">
+          <span>✓ Guardar Esta Foto</span>
+        </button>
+        <button type="button" class="btn-spotlight-action" style="background: rgba(255,255,255,0.08); color: var(--text-muted); border: 1px solid var(--border-subtle); padding: 0.7rem;" onclick="resetCustomImage()">
+          <span>↺ Restablecer a Foto Original</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================= BOTÓN FLOTANTE DE WHATSAPP 77254863 ================= -->
+  <a href="https://wa.me/59177254863?text=Hola%20NOVAMÓVIL!%20Tengo%20una%20consulta%20sobre%20los%20celulares" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" title="Chatear al 77254863">
+    <div class="floating-tooltip">¿Dudas? ¡Escríbenos al 77254863! 💬</div>
+    <div class="floating-circle">💬</div>
+  </a>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon">📱</div>
+          <div class="logo-text">NOVA<span>MÓVIL</span></div>
+        </a>
+        <p>
+          Tu tienda especializada en smartphones de alto impacto. Modelos con récords de resistencia, pantallas curvas inmersivas y atención personalizada directa.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Modelos Estrella</h4>
+        <ul>
+          <li><a href="javascript:void(0)" onclick="openSpecsModal('honor-x7e')">Honor X7E (108 MP & 6000 mAh)</a></li>
+          <li><a href="javascript:void(0)" onclick="openSpecsModal('infinix-hot-60-pro-plus')">Infinix Hot 60 Pro+ (Curvo 3D)</a></li>
+          <li><a href="javascript:void(0)" onclick="openSpecsModal('samsung-galaxy-a16')">Samsung Galaxy A16 (Super AMOLED)</a></li>
+          <li><a href="javascript:void(0)" onclick="openSpecsModal('tecno-pova-7')">Tecno Pova 7 (Mecha Design)</a></li>
+          <li><a href="javascript:void(0)" onclick="openSpecsModal('xiaomi-redmi-note-15')">Xiaomi Redmi Note 15 (108 MP)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Garantías</h4>
+        <ul>
+          <li><a href="#catalogo">100% Originales Nuevos en Caja</a></li>
+          <li><a href="#catalogo">Homologación y Factura Legal</a></li>
+          <li><a href="#catalogo">1 Año de Garantía Oficial</a></li>
+          <li><a href="#catalogo">Envíos a todo el país</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto Directo</h4>
+        <div class="footer-contact-item" style="margin-bottom: 0.8rem;">
+          <span>📞 Tel / WhatsApp:</span>
+          <a href="https://wa.me/59177254863" target="_blank" rel="noopener noreferrer">77254863</a>
+        </div>
+        <div class="footer-contact-item" style="margin-bottom: 0.8rem;">
+          <span>🕒 Horario de Atención:</span>
+        </div>
+        <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+          Lunes a Domingo: 8:00 AM - 10:00 PM<br>
+          Respuesta instantánea por WhatsApp
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 NOVAMÓVIL. Todos los derechos reservados. Contacto oficial: <strong>77254863</strong></div>
+      <div>Desarrollado con HTML, CSS, JavaScript y JSON</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

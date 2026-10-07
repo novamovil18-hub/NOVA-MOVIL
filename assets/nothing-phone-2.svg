@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="glyphBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <filter id="glowWhite" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Body -->
+  <rect x="75" y="30" width="250" height="540" rx="36" fill="url(#glyphBg)" stroke="#3f3f46" stroke-width="2" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.8))"/>
+
+  <!-- Transparent Internal Parts Textures -->
+  <rect x="95" y="50" width="210" height="500" rx="20" fill="none" stroke="#27272a" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Dual Top-Left Cameras -->
+  <circle cx="130" cy="95" r="22" fill="#000" stroke="#71717a" stroke-width="3"/>
+  <circle cx="130" cy="95" r="14" fill="#18181b"/>
+  <circle cx="127" cy="92" r="3" fill="#fff" opacity="0.8"/>
+
+  <circle cx="130" cy="155" r="22" fill="#000" stroke="#71717a" stroke-width="3"/>
+  <circle cx="130" cy="155" r="14" fill="#18181b"/>
+  <circle cx="127" cy="152" r="3" fill="#fff" opacity="0.8"/>
+
+  <!-- Glyph Interface LEDs (Glowing White Strips) -->
+  <!-- Arc around camera -->
+  <path d="M 175 75 A 50 50 0 0 1 175 175" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" filter="url(#glowWhite)"/>
+
+  <!-- Right Slanted Strip -->
+  <path d="M 230 80 L 275 80" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" filter="url(#glowWhite)"/>
+
+  <!-- Center Big Wireless Charging Ring Glyph -->
+  <circle cx="200" cy="300" r="65" stroke="#ffffff" stroke-width="6" fill="none" stroke-dasharray="80 20 50 15 60 20" filter="url(#glowWhite)"/>
+
+  <!-- Bottom exclamation mark Glyph -->
+  <path d="M 200 405 L 200 460" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" filter="url(#glowWhite)"/>
+  <circle cx="200" cy="485" r="4.5" fill="#ffffff" filter="url(#glowWhite)"/>
+
+  <!-- Red recording LED dot -->
+  <circle cx="280" cy="110" r="4" fill="#ef4444" filter="url(#glowWhite)"/>
+
+  <!-- Badge -->
+  <rect x="95" y="505" width="210" height="30" rx="15" fill="rgba(255, 255, 255, 0.1)" stroke="#fff" stroke-width="1"/>
+  <text x="200" y="525" fill="#ffffff" font-family="'Courier New', monospace" font-weight="bold" font-size="11" text-anchor="middle">💡 GLYPH INTERFACE (2)</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="povaMechaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#05070e" />
+    </linearGradient>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect x="75" y="30" width="250" height="540" rx="36" fill="url(#povaMechaBg)" stroke="#f97316" stroke-width="2.5" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.8))"/>
+
+  <!-- Mecha Cybernetic Triangular Lines & LED strips -->
+  <polygon points="100,50 250,50 300,100 250,220 100,220" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+  
+  <!-- LED strip (Glowing Orange) -->
+  <path d="M 230 70 L 270 110 L 230 180" stroke="#ffedd5" stroke-width="4" fill="none" filter="url(#glowOrange)"/>
+
+  <!-- Dual Camera in Mecha Deco -->
+  <circle cx="150" cy="110" r="26" fill="#000" stroke="#f97316" stroke-width="3"/>
+  <circle cx="150" cy="110" r="16" fill="#ea580c"/>
+  <circle cx="147" cy="107" r="4" fill="#fff" opacity="0.9"/>
+
+  <circle cx="150" cy="170" r="24" fill="#000" stroke="#f97316" stroke-width="3"/>
+  <circle cx="150" cy="170" r="14" fill="#ea580c"/>
+
+  <!-- Mecha Design Badge -->
+  <rect x="95" y="320" width="210" height="34" rx="17" fill="rgba(249, 115, 22, 0.2)" stroke="#f97316" stroke-width="1.5"/>
+  <text x="200" y="342" fill="#fdba74" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">🤖 MECHA DESIGN & LUCES LED</text>
+
+  <!-- Battery 6000 mAh & 45W -->
+  <rect x="110" y="370" width="180" height="28" rx="14" fill="rgba(0, 245, 155, 0.15)" stroke="#00f59b" stroke-width="1"/>
+  <text x="200" y="388" fill="#00f59b" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">🔋 6000 mAh & 45W HYPER</text>
+
+  <!-- Price -->
+  <text x="200" y="465" fill="#00f59b" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="25" text-anchor="middle">Bs. 2.430</text>
+  <text x="200" y="485" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">US$ 195,18</text>
+
+  <text x="200" y="540" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" letter-spacing="3" opacity="0.9">TECNO POVA 7</text>
+</svg>

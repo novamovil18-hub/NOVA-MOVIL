@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="leicaBigModule" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e1e1e" />
+      <stop offset="85%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#2d2d2d" />
+    </radialGradient>
+    <linearGradient id="xiaomiLeather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1c1e" />
+      <stop offset="100%" stop-color="#0d0d0e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Body -->
+  <rect x="75" y="30" width="250" height="540" rx="36" fill="url(#xiaomiLeather)" stroke="#e11d48" stroke-width="2" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.8))"/>
+
+  <!-- Giant Leica Camera Disc (1 inch sensor) -->
+  <circle cx="200" cy="185" r="95" fill="url(#leicaBigModule)" stroke="#e11d48" stroke-width="4"/>
+  <circle cx="200" cy="185" r="88" fill="#111" stroke="#333" stroke-width="2"/>
+
+  <!-- Leica Red Dot Logo -->
+  <circle cx="200" cy="120" r="12" fill="#e11d48"/>
+  <text x="200" y="124" fill="#fff" font-family="'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="9" text-anchor="middle">Leica</text>
+
+  <!-- 4 Big Lenses -->
+  <circle cx="155" cy="170" r="22" fill="#000" stroke="#555" stroke-width="3"/>
+  <circle cx="155" cy="170" r="14" fill="#0284c7"/>
+  <circle cx="152" cy="167" r="3" fill="#fff" opacity="0.8"/>
+
+  <circle cx="245" cy="170" r="22" fill="#000" stroke="#555" stroke-width="3"/>
+  <circle cx="245" cy="170" r="14" fill="#0284c7"/>
+  <circle cx="242" cy="167" r="3" fill="#fff" opacity="0.8"/>
+
+  <circle cx="165" cy="225" r="20" fill="#000" stroke="#555" stroke-width="3"/>
+  <circle cx="165" cy="225" r="12" fill="#0284c7"/>
+
+  <circle cx="235" cy="225" r="20" fill="#000" stroke="#555" stroke-width="3"/>
+  <circle cx="235" cy="225" r="12" fill="#0284c7"/>
+
+  <!-- Center Text -->
+  <text x="200" y="195" fill="#aaa" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">VARIO-SUMMILUX 1:1.63-4.0</text>
+
+  <!-- 1-Inch Sensor Highlight Badge -->
+  <rect x="110" y="360" width="180" height="34" rx="17" fill="rgba(225, 29, 72, 0.15)" stroke="#e11d48" stroke-width="1.5"/>
+  <text x="200" y="382" fill="#fb7185" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">📷 SENSOR 1 PULGADA SONY</text>
+
+  <!-- Fast Charging Pill -->
+  <rect x="125" y="415" width="150" height="28" rx="14" fill="rgba(255, 183, 3, 0.1)" stroke="#ffb703" stroke-width="1"/>
+  <text x="200" y="433" fill="#ffb703" font-family="Arial, sans-serif" font-weight="bold" font-size="10" text-anchor="middle">⚡ 90W HYPERCHARGE</text>
+
+  <!-- Brand logo -->
+  <text x="200" y="530" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="16" text-anchor="middle" letter-spacing="3" opacity="0.8">XIAOMI</text>
+</svg>
